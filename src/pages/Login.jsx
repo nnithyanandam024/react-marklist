@@ -8,7 +8,23 @@ const Login = ({ setIsAuthenticated }) => {
         e.preventDefault();
         if (username === "admin" && password === "12345") {
             setIsAuthenticated(true);
-        } else {
+        } 
+        else if (username === "user" && password === "12345") {
+            setIsAuthenticated(true);
+        }
+        else if (username === "nithyanandam" && password === "12345") {
+            setIsAuthenticated(true);
+        }
+        else if (username === "sabareesh" && password === "12345") {
+            setIsAuthenticated(true);
+        }
+        else if (username === "mithun" && password === "12345") {
+            setIsAuthenticated(true);
+        }
+        else if (username === "murugan" && password === "12345") { 
+            setIsAuthenticated(true);
+        }
+        else {
             alert("Invalid username or password!");
         }
     };
@@ -48,6 +64,8 @@ const formStyle = {
     maxWidth: "400px",
     margin: "0 auto",
     padding: "20px",
+    position: "absolute",
+    margin: "200px 650px",
     backgroundColor: "#f5f5f5",
     borderRadius: "8px",
     boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",

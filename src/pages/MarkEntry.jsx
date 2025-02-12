@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const MarkEntry = () => {
-    const [marks, setMarks] = useState(Array(5).fill(0));
+    const [marks, setMarks] = useState(Array(5).fill(""));
     const [total, setTotal] = useState(0);
     const [average, setAverage] = useState(0);
 
@@ -22,6 +22,7 @@ const MarkEntry = () => {
 
     return (
         <form onSubmit={handleMarksSubmit} style={formStyle}>
+            <h1>Welcome user</h1>
             <h2>Enter Marks for 5 Subjects</h2>
             {marks.map((mark, index) => (
                 <div key={index} style={inputGroup}>
@@ -56,11 +57,12 @@ export default MarkEntry;
 
 const formStyle = {
     maxWidth: "400px",
-    margin: "0 auto",
+    margin: "80px auto",
     padding: "20px",
     backgroundColor: "#f5f5f5",
     borderRadius: "8px",
     boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
+    overflow: "hidden",
 };
 
 const inputGroup = {
