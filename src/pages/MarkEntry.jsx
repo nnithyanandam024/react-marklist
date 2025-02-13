@@ -44,8 +44,8 @@ const MarkEntry = () => {
             {total > 0 && (
                 <div style={{ marginTop: "20px" }}>
                     <h3>Results</h3>
-                    <p>Total Marks: {total}</p>
-                    <p>Average Marks: {average.toFixed(2)}</p>
+                    <p>Total Marks: {total}/500</p>
+                    <p>Average Marks: {average.toFixed(2)}/100</p>
                 </div>
             )}
         </form>
